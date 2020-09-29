@@ -6,23 +6,23 @@ const HomePage = () => (
       <article className="menu-item">
         <section className="content">
           <h1 className="title">Hats</h1>
-          <span className="title">SPAN NOW</span>
+          <span className="title">SHOP NOW</span>
         </section>
         <section className="content">
           <h1 className="title">Jackets</h1>
-          <span className="title">SPAN NOW</span>
+          <span className="title">SHOP NOW</span>
         </section>
         <section className="content">
           <h1 className="title">Sneakers</h1>
-          <span className="title">SPAN NOW</span>
+          <span className="title">SHOP NOW</span>
         </section>
         <section className="content">
           <h1 className="title">Womens</h1>
-          <span className="title">SPAN NOW</span>
+          <span className="title">SHOP NOW</span>
         </section>
         <section className="content">
           <h1 className="title">Mens</h1>
-          <span className="title">SPAN NOW</span>
+          <span className="title">SHOP NOW</span>
         </section>
       </article>
     </section>
