@@ -54,8 +54,10 @@ export default class SignIn extends Component {
 						label='password'
 						required
 					/>
-					<CustomButton type='submit'>Sign In</CustomButton>
-					<CustomButton onClick={signInWithGoogle}>{' '}Sign in with Google{' '}</CustomButton>
+					<section className="buttons">
+						<CustomButton type='submit'>Sign In</CustomButton>
+						<CustomButton onClick={signInWithGoogle} isGoogleSignIn>{' '}Sign in with Google{' '}</CustomButton>
+					</section>
 				</form>
 			</article>
 		);
