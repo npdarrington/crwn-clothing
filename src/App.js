@@ -23,7 +23,6 @@ export default class App extends Component {
 	componentDidMount() {
 		this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
 			this.setState({ currentUser: user });
-			console.log(user);
 		});
 	}
 
@@ -34,7 +33,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<section className='App'>
-				<Header />
+				<Header currentUser={this.state.currentUser} />
 				<Switch>
 					<Route exact path='/' component={HomePage} />
 					<Route exact path='/shop' component={ShopPage} />
