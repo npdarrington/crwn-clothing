@@ -46,7 +46,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<section className='App'>
-				<Header currentUser={this.state.currentUser} />
+				<Header />
 				<Switch>
 					<Route exact path='/' component={HomePage} />
 					<Route exact path='/shop' component={ShopPage} />
