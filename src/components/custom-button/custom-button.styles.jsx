@@ -39,4 +39,10 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+
+  &:hover {
+		background-color: white;
+		color: black;
+		border: 1px solid black;
+	}
 `;
