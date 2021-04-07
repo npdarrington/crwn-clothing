@@ -32,3 +32,7 @@ export const CheckoutItemQuantity = styled.span`
   ${CheckoutItemsWidth}
   display: flex;
 `;
+
+export const CheckoutItemArrow = styled.article`
+  cursor: pointer;
+`;
