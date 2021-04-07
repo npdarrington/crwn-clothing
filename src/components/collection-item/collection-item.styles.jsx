@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+const customWidth = elem => {
+	return elem === 'name' ? 'width: 90%' : 'width: 10%';
+};
+
 const renderImage = ({ imageUrl }) => {
 	return imageUrl;
 };
@@ -36,4 +40,12 @@ export const CollectionItemImageContainer = styled.section`
   &:hover {
     opacity: 0.8;
   }
+`;
+
+export const CollectionItemFooterContainer = styled.section`
+	width: 100%;
+	height: 5%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
 `;
