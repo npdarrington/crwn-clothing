@@ -8,3 +8,15 @@ export const CollectionItemContainer = styled.section`
   align-items: center;
   position: relative;
 `;
+
+export const CollectionItemImage = styled.section`
+  width: 100%;
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
