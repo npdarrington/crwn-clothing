@@ -10,3 +10,8 @@ export const CollectionPreviewContainer = styled.section`
     margin-bottom: 25px;
   }
 `;
+
+export const PreviewContainer = styled.article`
+  display: flex;
+  justify-content: space-between;
+`;
