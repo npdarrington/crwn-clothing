@@ -19,3 +19,7 @@ export const ItemDetailsContainer = styled.section`
   justify-content: center;
   padding: 10px 20px;
 `;
+
+export const ItemNameContainer = styled.span`
+  font-size: 16px;
+`;
