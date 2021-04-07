@@ -38,5 +38,10 @@ export const CheckoutItemArrow = styled.article`
 `;
 
 export const CheckoutItemValue = styled.span`
+  margin: 0 10px;
+`;
 
+export const CheckoutRemoveButton = styled.section`
+  padding-left: 12px;
+  cursor: pointer;
 `;
