@@ -9,3 +9,13 @@ export const CheckoutItemContainer = styled.article`
 	font-size: 20px;
 	align-items: center;
 `;
+
+export const CheckoutImageContainer = styled.section`
+  width: 23%;
+  padding-right: 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
