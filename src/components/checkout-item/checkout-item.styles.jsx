@@ -19,3 +19,7 @@ export const CheckoutImageContainer = styled.section`
     height: 100%;
   }
 `;
+
+export const CheckoutItemDetails = styled.span`
+width: 23%;
+`;
