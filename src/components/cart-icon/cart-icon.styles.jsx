@@ -9,3 +9,10 @@ export const CartIconContainer = styled.article`
   justify-content: center;
   cursor: pointer;
 `;
+
+export const ItemCountContainer = styled.span`
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  bottom: 12px;
+`;
