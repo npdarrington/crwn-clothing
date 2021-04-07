@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const CheckoutItemsWidth = css`
+  width: 23%;
+`;
 
 export const CheckoutItemContainer = styled.article`
   width: 100%;
@@ -21,5 +25,10 @@ export const CheckoutImageContainer = styled.section`
 `;
 
 export const CheckoutItemDetails = styled.span`
-width: 23%;
+  ${CheckoutItemsWidth}
+`;
+
+export const CheckoutItemQuantity = styled.span`
+  ${CheckoutItemsWidth}
+  display: flex;
 `;
