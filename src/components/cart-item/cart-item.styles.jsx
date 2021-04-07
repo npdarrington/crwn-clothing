@@ -10,3 +10,12 @@ export const CartItemContainer = styled.article`
     width: 30%;
   }
 `;
+
+export const ItemDetailsContainer = styled.section`
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 20px;
+`;
