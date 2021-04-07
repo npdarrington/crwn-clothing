@@ -29,3 +29,8 @@ export const CartItemsContainer = styled.article`
   flex-direction: column;
   overflow: scroll;
 `;
+
+export const EmptyMessageContainer = styled.span`
+  font-size: 18px;
+  margin: 50px auto;
+`;
