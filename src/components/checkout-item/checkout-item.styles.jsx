@@ -36,3 +36,7 @@ export const CheckoutItemQuantity = styled.span`
 export const CheckoutItemArrow = styled.article`
   cursor: pointer;
 `;
+
+export const CheckoutItemValue = styled.span`
+
+`;
