@@ -7,6 +7,18 @@ export const CollectionItemContainer = styled.section`
   height: 350px;
   align-items: center;
   position: relative;
+
+  button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 255px;
+
+    &:hover {
+      opacity: 0.85;
+      display: flex;
+    }
+  }
 `;
 
 export const CollectionItemImage = styled.section`
