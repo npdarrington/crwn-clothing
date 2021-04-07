@@ -8,7 +8,7 @@ import CartItem from '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
 import { toggleCartHidden } from '../../redux/cart/cart.actions';
 
-import { CartDropdownContainer, CartItemsContainer } from './cart-dropdown.styles';
+import { CartDropdownContainer, CartItemsContainer, EmptyMessageContainer } from './cart-dropdown.styles';
 import { CustomButtonContainer } from '../custom-button/custom-button.styles';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (
@@ -19,7 +19,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
 					<CartItem key={cartItem.id} item={cartItem} />
 				))
 			) : (
-				<span className='empty-message'>Your cart is empty</span>
+				<EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
 			)}
 		</CartItemsContainer>
 		<CustomButtonContainer
