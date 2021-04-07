@@ -24,24 +24,24 @@ export const CheckoutImageContainer = styled.section`
   }
 `;
 
-export const CheckoutItemDetails = styled.span`
+export const CheckoutItemDetailsContainer = styled.span`
   ${CheckoutItemsWidth}
 `;
 
-export const CheckoutItemQuantity = styled.span`
+export const CheckoutItemQuantityContainer = styled.span`
   ${CheckoutItemsWidth}
   display: flex;
 `;
 
-export const CheckoutItemArrow = styled.article`
+export const CheckoutItemArrowContainer = styled.article`
   cursor: pointer;
 `;
 
-export const CheckoutItemValue = styled.span`
+export const CheckoutItemValueContainer = styled.span`
   margin: 0 10px;
 `;
 
-export const CheckoutRemoveButton = styled.section`
+export const CheckoutRemoveButtonContainer = styled.section`
   padding-left: 12px;
   cursor: pointer;
 `;
