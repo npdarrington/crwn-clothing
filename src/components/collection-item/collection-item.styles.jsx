@@ -49,3 +49,12 @@ export const CollectionItemFooterContainer = styled.section`
 	justify-content: space-between;
 	font-size: 18px;
 `;
+
+export const CollectionItemNameContainer = styled.span`
+	${customWidth('name')};
+	margin-bottom: 15px;
+`;
+
+export const CollectionItemPriceContainer = styled.span`
+	${customWidth('price')}
+`;
