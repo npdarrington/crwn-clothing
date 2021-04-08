@@ -7,6 +7,10 @@ export const CheckoutPageContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	margin: 50px auto 0;
+
+  button {
+    margin-left: auto;
+  }
 `;
 
 export const CheckoutHeaderContainer = styled.section`
