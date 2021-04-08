@@ -5,3 +5,8 @@ export const SignInContainer = styled.article`
 	display: flex;
 	flex-direction: column;
 `;
+
+export const SignInButtonContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+`;
