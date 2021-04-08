@@ -6,7 +6,7 @@ import { CollectionPreviewContainer, PreviewContainer } from './collection-previ
 
 const CollectionPreview = ({ title, items }) => (
 	<CollectionPreviewContainer>
-		<h1 className='title'>{title.toUpperCase()}</h1>
+		<h1>{title.toUpperCase()}</h1>
 		<PreviewContainer>
 			{items
 				.filter((item, index) => index < 4)
