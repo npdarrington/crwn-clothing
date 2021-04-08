@@ -3,8 +3,12 @@ import styled, { css } from 'styled-components';
 const shrinkLabel = css`
   top: -14px;
   font-size: 12px;
-  color: $main-color;
+  color: black;
 `;
+
+const detectValue = ({ shrink }) => {
+  return shrink.length ? shrinkLabel : '';
+}
 
 export const FormGroupContainer = styled.section`
   position: relative;
@@ -38,7 +42,7 @@ export const FormInputContainer = styled.input`
 `;
 
 export const FormInputLabel = styled.label`
-  color: $sub-color;
+  color: grey;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -46,4 +50,6 @@ export const FormInputLabel = styled.label`
   left: 5px;
   top: 10px;
   transition: 300ms ease all;
+
+  ${detectValue}
 `;
