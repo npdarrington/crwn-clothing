@@ -8,3 +8,20 @@ export const CheckoutPageContainer = styled.section`
 	align-items: center;
 	margin: 50px auto 0;
 `;
+
+export const CheckoutPageHeader = styled.section`
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgrey;
+
+  article {
+    text-transform: capitalize;
+    width: 23%;
+
+    &:last-child {
+      width: 8%;
+    }
+  }
+`;
