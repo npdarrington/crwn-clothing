@@ -29,3 +29,9 @@ export const CheckoutHeaderContainer = styled.section`
     }
   }
 `;
+
+export const CheckoutTotalContainer = styled.article`
+  margin-top: 30px;
+  margin-left: auto;
+  font-size: 36px;
+`;
