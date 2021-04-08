@@ -4,9 +4,13 @@ const displayBackgroundImage = ({ backgroundImage }) => {
   return backgroundImage;
 }
 
+const displayLargeStyle = ({ size }) => {
+  return size === 'large' ? '380px' : '240px';
+}
+
 export const MenuItemContainer = styled.article`
   min-width: 30%;
-  height: 240px;
+  height: ${displayLargeStyle};
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -18,6 +22,15 @@ export const MenuItemContainer = styled.article`
   &:hover {
     cursor: pointer;
   }
+
+  &:hover section:first-child {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+
+  &:hover section:last-child {
+    opacity: 0.9;
+  }
 `;
 
 export const BackgroundImageContainer = styled.section`
@@ -26,9 +39,29 @@ export const BackgroundImageContainer = styled.section`
   background-position: center;
   background-size: cover;
   background-image: url(${displayBackgroundImage});
+`;
 
-  &:hover {
-    transform: scale(1.1);
-    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+export const BackgroundContentContainer = styled.section`
+  height: 90px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+
+  h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 22px;
+    color: #4a4a4a;
+  }
+
+  span {
+    font-weight: lighter;
+    font-size: 16px;
   }
 `;
