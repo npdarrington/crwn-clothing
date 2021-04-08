@@ -9,7 +9,7 @@ export const CheckoutPageContainer = styled.section`
 	margin: 50px auto 0;
 `;
 
-export const CheckoutPageHeader = styled.section`
+export const CheckoutHeaderContainer = styled.section`
   width: 100%;
   padding: 10px 0;
   display: flex;
