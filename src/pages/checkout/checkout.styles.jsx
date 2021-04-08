@@ -35,3 +35,10 @@ export const CheckoutTotalContainer = styled.article`
   margin-left: auto;
   font-size: 36px;
 `;
+
+export const CheckoutPayTestContainer = styled.section`
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
+`;
