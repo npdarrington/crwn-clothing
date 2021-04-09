@@ -8,6 +8,10 @@ export const CollectionPreviewContainer = styled.section`
   h1 {
     font-size: 28px;
     margin-bottom: 25px;
+
+    &:hover {
+      color: grey;
+    }
   }
 `;
 
