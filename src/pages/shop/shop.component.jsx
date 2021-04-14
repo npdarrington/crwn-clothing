@@ -16,25 +16,25 @@ const CollectionPageWithSpinner = WithSpinner(CollectionPage);
 
 class ShopPage extends React.Component {
 	componentDidMount() {
-		
+		const { fetchCollectionsStartAsync } = this.props;
+		fetchCollectionsStartAsync();
 	}
 
 	render() {
-		const { match } = this.props;
-		const { loading } = this.state;
+		const { match, isCollectionFetching } = this.props;
 		return (
 			<section>
 				<Route
 					exact
 					path={`${match.path}`}
 					render={props => (
-						<CollectionOverviewWithSpinner isLoading={loading} {...props} />
+						<CollectionOverviewWithSpinner isLoading={isCollectionFetching} {...props} />
 					)}
 				/>
 				<Route
 					path={`${match.path}/:collectionId`}
 					render={props => (
-						<CollectionPageWithSpinner isLoading={loading} {...props} />
+						<CollectionPageWithSpinner isLoading={isCollectionFetching} {...props} />
 					)}
 				/>
 			</section>
