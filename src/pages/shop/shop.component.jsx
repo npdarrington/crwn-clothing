@@ -21,7 +21,7 @@ class ShopPage extends React.Component {
 	}
 
 	render() {
-		const { match, isFetchingCollection, isCollectionLoaded } = this.props;
+		const { match, isFetchingCollection, isCollectionsLoaded } = this.props;
 		return (
 			<section>
 				<Route
@@ -34,7 +34,7 @@ class ShopPage extends React.Component {
 				<Route
 					path={`${match.path}/:collectionId`}
 					render={props => (
-						<CollectionPageWithSpinner isLoading={!isCollectionLoaded} {...props} />
+						<CollectionPageWithSpinner isLoading={!isCollectionsLoaded} {...props} />
 					)}
 				/>
 			</section>
