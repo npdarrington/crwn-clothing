@@ -21,20 +21,20 @@ class ShopPage extends React.Component {
 	}
 
 	render() {
-		const { match, isCollectionFetching } = this.props;
+		const { match, isFetchingCollection } = this.props;
 		return (
 			<section>
 				<Route
 					exact
 					path={`${match.path}`}
 					render={props => (
-						<CollectionOverviewWithSpinner isLoading={isCollectionFetching} {...props} />
+						<CollectionOverviewWithSpinner isLoading={isFetchingCollection} {...props} />
 					)}
 				/>
 				<Route
 					path={`${match.path}/:collectionId`}
 					render={props => (
-						<CollectionPageWithSpinner isLoading={isCollectionFetching} {...props} />
+						<CollectionPageWithSpinner isLoading={isFetchingCollection} {...props} />
 					)}
 				/>
 			</section>
@@ -43,7 +43,7 @@ class ShopPage extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-	isCollectionFetching: selectIsCollectionFetching
+	isFetchingCollection: selectIsCollectionFetching
 })
 
 const mapDispatchToProps = dispatch => ({
