@@ -15,9 +15,7 @@ export function* getSnapshotFromUserAuth(userAuth) {
 	try {
 		const userRef = yield call(createUserProfileDocument, userAuth);
 		const userSnapshot = yield userRef.get();
-		yield put(
-			signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() })
-		);
+		yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
 	} catch (error) {
 		yield put(signInFailure(error.message));
 	}
@@ -64,5 +62,9 @@ export function* onCheckUserSession() {
 }
 
 export function* userSagas() {
-	yield all([call(onGoogleSignInStart), call(onEmailSignInStart), call(isUserAuthenticated)]);
+	yield all([
+		call(onGoogleSignInStart),
+		call(onEmailSignInStart),
+		call(onCheckUserSession),
+	]);
 }
