@@ -33,12 +33,6 @@ class SignUp extends Component {
 
 		try {
 			signUpStart({ displayName, email, password });
-			this.setState({
-				displayName: '',
-				email: '',
-				password: '',
-				confirmPassword: '',
-			});
 		} catch (error) {
 			console.error(error);
 		}
