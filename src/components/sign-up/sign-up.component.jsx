@@ -22,7 +22,6 @@ class SignUp extends Component {
 
 	handleSubmit = event => {
 		event.preventDefault();
-
 		const { signUpStart } = this.props;
 		const { displayName, email, password, confirmPassword } = this.state;
 
@@ -30,12 +29,8 @@ class SignUp extends Component {
 			alert(`passwords don't match`);
 			return;
 		}
-
-		try {
-			signUpStart({ displayName, email, password });
-		} catch (error) {
-			console.error(error);
-		}
+		
+		signUpStart({ displayName, email, password });
 	};
 
 	handleChange = event => {
@@ -91,7 +86,7 @@ class SignUp extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-	signUpStart: (userInfo) => dispatch(signUpStart(userInfo))
+	signUpStart: (userCredentials) => dispatch(signUpStart(userCredentials))
 })
 
 export default connect(null, mapDispatchToProps)(SignUp);
