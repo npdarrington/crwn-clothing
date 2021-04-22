@@ -16,6 +16,18 @@ export const CollectionItemContainer = styled.section`
 	align-items: center;
 	position: relative;
 
+	@media screen and (max-width: 950px) {
+		width: 29vw;
+	}
+
+	@media screen and (max-width: 700px) {
+		width: 40vw;
+	}
+
+	@media screen and (max-width: 500px) {
+		width: 80vw;
+	}
+
 	button {
 		width: 80%;
 		opacity: 0.7;
