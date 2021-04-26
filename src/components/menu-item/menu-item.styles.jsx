@@ -36,7 +36,7 @@ export const MenuItemContainer = styled.article`
 export const BackgroundImageContainer = styled.section`
   width: 100%;
   height: 100%;
-  max-width: 550px;
+  max-width: 650px;
   min-width: 250px;
   background-position: center;
   background-size: cover;
